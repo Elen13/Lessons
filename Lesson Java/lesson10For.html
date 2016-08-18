@@ -1,0 +1,13 @@
+<meta charset="utf-8">
+<script>
+	var summ = parseInt(prompt('Amount of deposit: '));
+	var finalSumm = summ;
+	var proc = parseInt(prompt('Interest rate: '));
+	var year = parseInt(prompt('Length of deposit: '));
+	var n = 0;
+	for (n = 1; n <= year; n++) {
+		finalSumm = finalSumm + (finalSumm * proc) / 100;
+		alert('Your deposit after ' + n + ' year ' + finalSumm);
+	}
+	alert('Your deposit: ' + Math.floor(finalSumm));
+</script>

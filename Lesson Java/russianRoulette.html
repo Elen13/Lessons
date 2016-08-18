@@ -1,0 +1,15 @@
+<meta charset="utf-8">
+<script>
+	var n = 0;
+	var a;
+	do {
+		if ((Math.random() * 6) < 1) {
+			alert('fnita la comedia');
+		}
+		n++;
+		alert('Would you like to continue?');
+		a = parseInt(prompt('1 - yes, 0 - no'));
+	} while (a == 1)
+
+	alert('Round plaied: ' + n);	
+</script>

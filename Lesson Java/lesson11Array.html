@@ -1,0 +1,26 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	var arr = [];
+	var arrColor = [-1, 0, 1];
+	var index = 0;
+	//var red = 0;
+	var roundCount = 0;
+	var rounds = parseInt(prompt('Enter count of rounds: '));
+	var i = 0;
+
+	for(i = 0; i < rounds; i++) {
+		index = Math.round(Math.random()*2);
+		if(index == 2) {
+			roundCount++;
+		} 
+		arr.push(arrColor[index]);
+	}
+	alert(arr);
+
+	/*for(i = 0; i < arr.length; i++) {
+		if (arr[i] == 1) {
+			red++;
+		}
+	}*/
+	alert('Count of rounds with red: ' + roundCount);
+</script>
